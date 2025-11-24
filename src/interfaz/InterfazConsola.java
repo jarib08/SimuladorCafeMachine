@@ -78,13 +78,13 @@ public class InterfazConsola {
                     case 4:
                         menuReportes();
                         break;
+                    // case 5:
+                    //     menuConfiguracion();
+                    //     break;
                     case 5:
-                        menuConfiguracion();
-                        break;
-                    case 6:
                         menuUsuarios();
                         break;
-                    case 7:
+                    case 6:
                         guardarYSalir();
                         continuar = false;
                         break;
@@ -128,9 +128,9 @@ public class InterfazConsola {
         System.out.println("2. Gestionar Bebidas");
         System.out.println("3. Simular Preparacion de Bebida");
         System.out.println("4. Ver Reportes");
-        System.out.println("5. Configuracion");
-        System.out.println("6. Gestionar Usuarios");
-        System.out.println("7. Guardar y Salir");
+        // System.out.println("5. Configuracion");
+        System.out.println("5. Gestionar Usuarios");
+        System.out.println("6. Guardar y Salir");
         System.out.println("====================================");
         System.out.print("Seleccione una opcion: ");
     }
@@ -430,55 +430,55 @@ public class InterfazConsola {
         }
     }
 
-    private void menuConfiguracion() {
-        System.out.println("\n--- CONFIGURACION ---");
-        System.out.println("Configuracion actual: " + maquina.getConfiguracion().toString());
-        System.out.println("\n1. Cambiar modo de simulacion");
-        System.out.println("2. Cambiar idioma");
-        System.out.println("3. Volver al menu principal");
-        System.out.print("Seleccione una opcion: ");
+    // private void menuConfiguracion() {
+    //     System.out.println("\n--- CONFIGURACION ---");
+    //     System.out.println("Configuracion actual: " + maquina.getConfiguracion().toString());
+    //     System.out.println("\n1. Cambiar modo de simulacion");
+    //     System.out.println("2. Cambiar idioma");
+    //     System.out.println("3. Volver al menu principal");
+    //     System.out.print("Seleccione una opcion: ");
 
-        int opcion = leerOpcion();
+    //     int opcion = leerOpcion();
 
-        try {
-            switch (opcion) {
-                case 1:
-                    cambiarModo();
-                    break;
-                case 2:
-                    cambiarIdioma();
-                    break;
-                case 3:
-                    return;
-                default:
-                    System.out.println("Opcion invalida");
-            }
-        } catch (ConfiguracionInvalidaException e) {
-            manejarExcepcion(e);
-        }
-    }
+    //     try {
+    //         switch (opcion) {
+    //             case 1:
+    //                 cambiarModo();
+    //                 break;
+    //             case 2:
+    //                 cambiarIdioma();
+    //                 break;
+    //             case 3:
+    //                 return;
+    //             default:
+    //                 System.out.println("Opcion invalida");
+    //         }
+    //     } catch (ConfiguracionInvalidaException e) {
+    //         manejarExcepcion(e);
+    //     }
+    // }
 
-    private void cambiarModo() throws ConfiguracionInvalidaException {
-        System.out.println("\n1. AUTOMATICO");
-        System.out.println("2. MANUAL");
-        System.out.print("Seleccione el modo: ");
-        int opcion = leerOpcion();
+    // private void cambiarModo() throws ConfiguracionInvalidaException {
+    //     System.out.println("\n1. AUTOMATICO");
+    //     System.out.println("2. MANUAL");
+    //     System.out.print("Seleccione el modo: ");
+    //     int opcion = leerOpcion();
 
-        String modo = (opcion == 1) ? "AUTOMATICO" : "MANUAL";
-        maquina.getConfiguracion().cambiarModo(modo);
-        System.out.println("Modo cambiado a: " + modo);
-    }
+    //     String modo = (opcion == 1) ? "AUTOMATICO" : "MANUAL";
+    //     maquina.getConfiguracion().cambiarModo(modo);
+    //     System.out.println("Modo cambiado a: " + modo);
+    // }
 
-    private void cambiarIdioma() throws ConfiguracionInvalidaException {
-        System.out.println("\n1. ESPANOL");
-        System.out.println("2. INGLES");
-        System.out.print("Seleccione el idioma: ");
-        int opcion = leerOpcion();
+    // private void cambiarIdioma() throws ConfiguracionInvalidaException {
+    //     System.out.println("\n1. ESPANOL");
+    //     System.out.println("2. INGLES");
+    //     System.out.print("Seleccione el idioma: ");
+    //     int opcion = leerOpcion();
 
-        String idioma = (opcion == 1) ? "ESPANOL" : "INGLES";
-        maquina.getConfiguracion().cambiarIdioma(idioma);
-        System.out.println("Idioma cambiado a: " + idioma);
-    }
+    //     String idioma = (opcion == 1) ? "ESPANOL" : "INGLES";
+    //     maquina.getConfiguracion().cambiarIdioma(idioma);
+    //     System.out.println("Idioma cambiado a: " + idioma);
+    // }
 
     private void menuUsuarios() {
         try {

@@ -46,7 +46,7 @@ public class InterfazConsola {
 
     private void crearUsuariosPredeterminados() {
         usuarios.add(new Usuario("Admin", Usuario.Rol.TECNICO));
-        usuarios.add(new Usuario("Operador1", Usuario.Rol.OPERADOR));
+        usuarios.add(new Usuario("Jarib", Usuario.Rol.OPERADOR));
         System.out.println("Usuarios predeterminados creados");
     }
 

@@ -113,9 +113,9 @@ Las contribuciones son bienvenidas. Para contribuir:
 ## 👥 Autores
 
 - [@jarib08](https://github.com/jarib08) - Desarrollador
-- [@Cris3x3] (https://github.com/Cris3x3) - Desarrollador
-- [@JXNA007] (https://github.com/JXNA007) - Desarrollador
-- [@Saravivas229-lang!] (https://github.com/Saravivas229-lang) - Desarrollador
+- [@Cris3x3](https://github.com/Cris3x3) - Desarrollador
+- [@JXNA007](https://github.com/JXNA007) - Desarrollador
+- [@Saravivas229-lang!](https://github.com/Saravivas229-lang) - Desarrollador
 
 ## 📄 Licencia
 
